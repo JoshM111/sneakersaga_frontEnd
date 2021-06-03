@@ -10,7 +10,7 @@ const ShoeId = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://18.117.145.31/sneaker/" + props.sneaker_id)
+      .get("https://18.117.145.31/sneaker/" + props.sneaker_id)
       .then((res) => {
         console.log(res.data);
         setSneaker(res.data);
@@ -24,7 +24,7 @@ const ShoeId = (props) => {
   const getReview = (sneakerObject) => {
     console.log(sneakerObject.id);
     axios
-      .get("http://18.117.145.31/review/")
+      .get("https://18.117.145.31/review/")
       .then((res) => {
         console.log(res.data);
         let reviews = res.data;

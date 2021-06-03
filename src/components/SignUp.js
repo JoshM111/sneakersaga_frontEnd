@@ -12,7 +12,7 @@ const Signup = (props) => {
   const onSubmitHandler = e => {
     e.preventDefault();
 
-    axios.post('http://18.117.145.31/', {
+    axios.post('https://18.117.145.31/user/', {
       firstName,
       lastName,
       email,

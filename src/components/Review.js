@@ -9,7 +9,7 @@ const Review = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://18.117.145.31/user/")
+      .get("https://18.117.145.31/user/")
       .then((res) => {
         console.log(res.data);
         getCreator(res.data);
@@ -23,7 +23,7 @@ const Review = (props) => {
   const getCreator = (userObject) => {
     console.log(userObject);
     axios
-      .get("http://18.117.145.31/review/")
+      .get("https://18.117.145.31/review/")
       .then((res) => {
         console.log(res.data);
         let users = res.data;
@@ -48,7 +48,7 @@ const Review = (props) => {
   const submitHandler = (e) => {
     e.preventDefault();
     axios
-      .post("http://18.117.145.31/review/")
+      .post("https://18.117.145.31/review/")
       .then((res) => {
         console.log(res.data);
         setSneakerReview(res.data);

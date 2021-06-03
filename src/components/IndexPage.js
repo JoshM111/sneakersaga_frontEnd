@@ -8,7 +8,7 @@ const AllSneakers = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://18.117.145.31/sneaker/")
+      .get("https://18.117.145.31/sneaker/")
       .then((res) => {
         console.log(res.data);
         setAllSneakers(res.data);
